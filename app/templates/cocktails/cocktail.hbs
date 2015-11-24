@@ -1,0 +1,16 @@
+<h2>{{model.name}}</h2>
+<p>
+  {{model.description}}
+</p>
+<p>
+  <ul>
+    {{#each model.proportions as |proportion|}}
+      <li>{{proportion.amount}} {{proportion.ingredient}}</li>
+    {{/each}}
+  </ul>
+
+  <p>
+    {{model.instructions}}
+  </p>
+
+</p>
